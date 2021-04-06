@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+  <title>Context Analyzer</title>
+  <html>
+    <head>
+        <base target="_blank">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="//unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
+		
+				<script src="sweetalert2.min.js"></script>
+		<link rel="stylesheet" href="sweetalert2.min.css">
+		<link rel="stylesheet" href="sweetalert2.css">
+
+		 <link href="sweetalert.css" type="text/css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+        <style>
+          /* Style The Dropdown Button */
+          @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+          body{
+            width:300px;
+            height:175px;
+            font: size 12px;
+            font-family: 'Open Sans', cursive;
+            font-feature-settings: "liga";
+            background: whitesmoke;
+            color: rgb(0, 0, 0);
+            border: 4px #f2f2f2;
+          }
+          
+          textarea{
+            min-height: 150px;
+            min-width: 250px;
+            box-shadow: 1px 1px 5px grey;
+            border:none;
+          }
+     /*      .dropbtn {
+            background-color: #ff0000;
+            color: white;
+            padding: 1px;
+            font-size: 10px;
+            border: none;
+            cursor: pointer;
+          } */
+
+          /* The container <div> - needed to position the dropdown content */
+          .dropdown {
+            position: relative;
+            display: inline-block;
+          }
+
+          /* Dropdown Content (Hidden by Default) */
+          .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+          }
+
+          /* Links inside the dropdown */
+          .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+          }
+
+          /* Change color of dropdown links on hover */
+          .dropdown-content a:hover {background-color: #f1f1f1}
+
+          /* Show the dropdown menu on hover */
+          .dropdown:hover .dropdown-content {
+            display: block;
+          }
+
+          /* Change the background color of the dropdown button when the dropdown content is shown */
+          .dropdown:hover .dropbtn {
+            /*background-color: #3e8e41;*/
+          }
+
+          .parent div{
+            float: left;
+            clear: none;
+          }
+
+          #p1
+          {
+	          font: size 12px;
+            text-align: center;
+            color: rgb(32, 32, 32);
+          }
+
+          #title{
+            font-size:15px;
+            text-align: center;
+            color: rgb(32, 32, 32);
+          }
+
+        </style>
+    </head>
+    <body>
+      <div><h2 style ="text-align: center;
+                       color: black;
+                       font-weight: 700;"> 
+                      Covid-19 Fake News Detector 
+      </h2></div>
+      <div class = "parent">
+            <div id = "icon"></div>
+            <div id="p1"></div>
+      </div>
+      <div style="clear: both; "id = "title"></div>
+      <div><h3 style ="text-align: left;
+                       color: rgb(211, 3, 3);
+                       padding: 15px 15px;
+                       font-size:15px;
+                       font-weight: 500;
+                       "> 
+      Would you like to check if this page contains inaccurate information on COVID-19? 
+      </h3></div>
+      <div  class="container">
+          <div class="col-md-4 text-center">
+                 <!-- <h5 style="background-color: #4595bd;box-shadow: 1px 1px 5px grey; color:white;padding: 16px;"> 
+                  COVID - News Analyser 
+                </h5>  -->
+                <!-- <textarea id="TargetData" rows="0" cols="3" placeholder="Hello Searcher  .."></textarea> -->
+                <br />
+                <br />
+                <button id="AnalyzeMe" type="button" style="border:2px solid white; 
+                                                            font-weight: 600;
+                                                            padding:16px;
+                                                            box-shadow: 1px 1px 5px grey;
+                                                            background-color: #ffffff;
+                                                            border-radius: 4px; 
+                                                          
+                                                            ">
+                  Yes, Analyse Text 
+                </button><br />
+
+                <!-- <div class="dropdown">
+                  <button class="dropbtn">More</button>
+                  <div class="dropdown-content">
+                    <a href="#">Help</a>
+                    <a href="#">Authors</a>
+                    <a href="#">View Code</a>
+                  </div>
+                </div> -->
+              <div style="margin-bottom:15px;">
+            </div>
+          </div>
+      </div>
+      <script src="popup.js"></script>
+      <script src="jquery-2.2.js"></script>
+	  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	  <script src="sweetalert.min.js" type="text/javascript"></script>
+	  <script src="sweetalert2.min.js" type="text/javascript"></script>
+	  <script src="sweetalert2.js" type="text/javascript"></script>
+	  <script src="FileSaver.min.js" type="text/javascript"></script>
+	  <script src="FileSaver.js" type="text/javascript"></script>
+	  
+	  
+    </body>
+</html>

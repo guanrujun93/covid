@@ -1,0 +1,18 @@
+  {
+    "name": "COVID_Button",
+    "version": "1.0",
+    "description": "AI based web extension which analyses the misinformation on COVID-19.",
+	"permissions": ["activeTab","storage","tabs","<all_urls>"],
+    "content_scripts":[{
+      "matches":["<all_urls>"],
+      "js":["background.js","sweetalert.min.js","sweetalert2.min.js","sweetalert2.js"],
+	  "css": ["sweetalert.css", "sweetalert2.min.css", "sweetalert2.css"]
+    }
+    ],
+  	"browser_action": {
+    	"default_icon": "icon.png",
+    	"default_popup": "popup.html"
+  	},
+
+    "manifest_version": 2
+  }
